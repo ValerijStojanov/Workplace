@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block title %} Pracovní nabídky {% endblock  %}
+
+{% block index_content %}
+<div class="index_content"> 
+    <form class="search_form" action="{% url 'homepage' %}">
+        <input type="search" class="form_input" placeholder="Vyhledejte profesi" name="search">
+        <button class="form_button" type="submit"> Vyhledat </button>
+    </form>
+    <div class="index_title_div">
+        <h1>Pracovní pozice</h1>
+    </div>
+    <div class="container">
+        <div class="pracovni_pozice">
+            {% for pozice in pracovni_pozice %}
+                <a class="pozice-karta" href="{% url 'detail_pozice' pozice.slug %}">
+                    <div>    
+                        <h3>{{ pozice.nazev }}</h3>
+                        <div>
+                            <p><strong>Společnost:</strong> {{ pozice.firma }}</p>
+                            <p><strong>Mzda:</strong> {{ pozice.mzda }}</p>
+                            <p><strong>Přídano:</strong> {{ pozice.datum_tvorby }}</p>
+                            <p><strong>Oblast:</strong> {{ pozice.misto_prace }}</p>
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

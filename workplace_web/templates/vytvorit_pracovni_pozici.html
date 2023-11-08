@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block form_content %}
+{% load static %}
+
+
+    <div class="vytvorit_pracovni_pozici_formular_container">
+        <h1 class="vytvorit_pracovni_pozici_formular_title">Vytvořit novou pracovní nabídku</h1>
+        <div class="vytvorit_pracovni_pozici_formular_content">
+            <form class='vytvorit_pracovni_pozici_formular' method="post">
+                {% csrf_token %}
+                {{ form.media }}
+                {{ form.as_p }}
+                <div class="vytvorit_pracovni_pozici_form_btn">
+                    <button class="vytvorit_pracovni_pozici_btn_create" type="submit">Vytvořit pracovní nabídku</button>    
+                </div>
+            </form>
+            <br>
+            <button class="back_button"> <img id="return_svg" src="{% static 'svg/return.svg' %}" alt=""> <a href='{% url "homepage" %}'>Nabídka pracovních nabídek</a></button>
+            
+        </div>
+    </div>    
+
+{% endblock %}

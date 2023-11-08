@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block login %}
+
+
+<h1 class="login_form_title">Přihlašení</h1>
+
+<div class="login_form_container">
+    <form class='login_form' method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Přihlásit se</button>
+    </form>
+</div>
+
+{% endblock  %}

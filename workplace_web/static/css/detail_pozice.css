@@ -1,0 +1,226 @@
+
+:root {
+    --nav-font: 'Kanit', sans-serif;
+}
+
+.detail_pozice_title {
+    font-family: var(--nav-font);
+    text-align: center;
+    background-color: #e52165;
+    font-size: 2.5em;
+    color: white;
+    margin: 2em 0em 2em 0em;
+    padding: .3em 0em .3em 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+#employee_svg {
+    width: 2em;
+    height: 2em;
+    border: 3px solid black;
+    padding: .2em;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.detail_pozice_main {
+    margin: 0em 0em 5em 0em;
+    justify-content: center;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.detail_content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--nav-font);
+    width: 100%;
+}
+
+.left_side_detail_pozice_content {
+    width: 40%;
+}
+
+.right_side_detail_pozice_content {
+    width: 60%;
+}
+
+.left_side_detail_pozice_content p {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+}
+
+.popis_pozice p {
+    text-align: left;
+    font-size: 1em;
+}
+
+.firma, .misto_prace, .mzda {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 2em;
+}
+
+#building_svg, #pin_svg ,#pay_svg {
+    border: 3px solid black;
+    padding: 1.2em;
+    border-radius: 50%;
+    background-color: black;
+    width: 4em;
+    height: 4em;
+}
+
+
+.popis_pozice {
+    padding: 2em;
+    text-align: justify;
+}
+
+
+
+#return_svg {
+    margin-left: 1em;
+    height: 1.2em;
+    width: 1.2em;
+}
+
+.buttom_mam_zajem {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+
+.zajem_button {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 1.3em;
+    background-color: #e52165;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    width: 20em;
+    border-radius: 4px;
+    padding: 1em 1em 1em 1em;
+}
+    
+    .zajem_button:hover {
+        background-color: #f10658;
+        transform: scale(1.02);
+        
+    }
+    
+    
+
+.zajem_button a {
+    text-decoration: none;
+    font-family: var(--nav-font);
+    color: white;
+    padding: 1em 1em 1em 1em;
+}
+
+.zpet_button_container {
+    display: flex;
+    justify-content: center;
+}
+
+.zpet_button {
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    width: 15em;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.zpet_button:hover {
+    transform: scale(1.02);
+}
+
+.zpet_button a {
+    text-decoration: none;
+    font-family: var(--nav-font);
+    color: white;
+    padding: 1em 1em 1em 1em;
+}
+
+.detail_pozice_btns_container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .detail_content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left_side_detail_pozice_content {
+        width: 100%;
+    }
+
+    .right_side_detail_pozice_content {
+        width: 100%;
+    }
+    #employee_svg #building_svg, #pin_svg ,#pay_svg {
+        width: 3em;
+        height: 3em;
+        border: 3px solid black;
+        padding: 2em;
+        border-radius: 50%;
+        background-color: black;
+    }
+
+
+    .popis_pozice p {
+        text-align: left;
+        font-size: 1em;
+    }
+
+    .detail_pozice_title, .firma, .misto_prace, .mzda {
+        display: flex; 
+        align-items: center;
+        width: 100%;
+        margin-top: 2em;
+    }
+    
+    .popis_pozice {
+        height: auto;
+        overflow: scroll;
+        text-align: left;
+        margin-bottom: 2em;
+        width: auto;
+    }
+
+    
+    .detail_pozice_btns_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        width: 100%;
+    }
+}

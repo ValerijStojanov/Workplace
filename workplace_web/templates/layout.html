@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+
+body,html {
+    margin: 0;
+    height: 100%;
+}
+
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/detail_pozice.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/vytvorit_pracovni_pozici.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/succeses_page_form.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/register.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Basic&family=Hammersmith+One&family=Kanit&family=Nunito:wght@200;400;700&family=Roboto+Slab&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">    
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href= "{% static 'favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %} ">
+    <link rel="manifest" href="{% static 'favicon/site.webmanifest' %} %}">
+    <link rel="mask-icon" href="{% static 'favicon/safari-pinned-tab.svg' %}" color="#e52165">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>{% block title %}{{ pozice.nazev }}{% endblock %}</title>
+</head>
+
+<body>
+    {% include "navbar.html" %}
+    
+        
+            {% block content %}{% endblock %}
+        
+        
+            {% block index_content %}{% endblock %}
+        
+        
+            {% block detail_pozice %}{% endblock %}
+        
+        
+            {% block form_content %}{% endblock %}
+        
+        
+            {% block successes_page_form %}{% endblock %}
+        
+        
+            {% block login %}{% endblock %}
+        
+        
+            {% block register %}{% endblock %}
+        
+    
+</body>
+{% include "footer.html" %}
+
+</html>

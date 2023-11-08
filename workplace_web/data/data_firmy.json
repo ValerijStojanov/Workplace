@@ -1,0 +1,200 @@
+[
+    {
+        "nazev": "Progress LLC",
+        "popis": "Společnost specializující se na vývoj softwaru.",
+        "email": "info@progress.com",
+        "phone_number": "123-456-7890"
+    },
+    {
+        "nazev": "ActiveBuild",
+        "popis": "Stavební firma poskytující stavební a rekonstrukční služby.",
+        "email": "info@activebuild.com",
+        "phone_number": "987-654-3210"
+    },
+    {
+        "nazev": "MegaTrade",
+        "popis": "Společnost zabývající se velkoobchodem a maloobchodem elektronikou a spotřební elektronikou.",
+        "email": "sales@megatrade.com",
+        "phone_number": "555-123-4567"
+    },
+    {
+        "nazev": "InnovateTech",
+        "popis": "Technologická společnost zaměřená na inovace a pokročilá řešení.",
+        "email": "contact@innovatetech.net",
+        "phone_number": "888-222-3333"
+    },
+    {
+        "nazev": "GreenSolutions Inc",
+        "popis": "Poskytovatel ekologických řešení pro udržitelný život.",
+        "email": "info@greensolutions.com",
+        "phone_number": "444-789-5678"
+    },
+    {
+        "nazev": "GlobalWidgets",
+        "popis": "Světový lídr v výrobě a distribuci widgetů.",
+        "email": "info@globalwidgets.biz",
+        "phone_number": "123-555-7777"
+    },
+    {
+        "nazev": "OceanBreeze Resorts",
+        "popis": "Řetězec luxusních resortů s dechberoucími nemovitostmi přímo u oceánu.",
+        "email": "reservations@oceanbreeze.com",
+        "phone_number": "555-321-9999"
+    },
+    {
+        "nazev": "EcoSolutions Group",
+        "popis": "Poradenská firma pro udržitelnost, která propaguje ekologické praktiky.",
+        "email": "info@ecosolutionsgroup.org",
+        "phone_number": "777-444-2222"
+    },
+    {
+        "nazev": "Sunset Industries",
+        "popis": "Výrobce vysoce kvalitního průmyslového zařízení a strojů.",
+        "email": "sales@sunsetindustries.com",
+        "phone_number": "888-987-6543"
+    },
+    {
+        "nazev": "HealthCure Labs",
+        "popis": "Bio technologická společnost zaměřená na průlomová zdravotnická řešení.",
+        "email": "contact@healthcurelabs.com",
+        "phone_number": "123-888-6666"
+    },
+    {
+        "nazev": "TechGenius Innovations",
+        "popis": "Přední inovace v oblasti technologie.",
+        "email": "info@techgenius.com",
+        "phone_number": "555-777-1234"
+    },
+    {
+        "nazev": "Nature's Harvest Co.",
+        "popis": "Dodavatel organických a přírodních potravinových výrobků.",
+        "email": "sales@naturesharvest.co",
+        "phone_number": "555-999-4444"
+    },
+    {
+        "nazev": "GreenEnergy Solutions",
+        "popis": "Obnovitelné energetické řešení pro udržitelnou budoucnost.",
+        "email": "info@greenenergy.com",
+        "phone_number": "777-123-9876"
+    },
+    {
+        "nazev": "GlobalTrade Exchange",
+        "popis": "Mezinárodní obchodní platforma propojující firmy po celém světě.",
+        "email": "contact@globaltradeexchange.com",
+        "phone_number": "555-321-5678"
+    },
+    {
+        "nazev": "LuxuryLifestyle Inc",
+        "popis": "Kurátoři luxusního životního stylu a produktů.",
+        "email": "info@luxurylifestyle.com",
+        "phone_number": "123-555-8888"
+    },
+    {
+        "nazev": "SpaceTech Innovations",
+        "popis": "Průzkum vesmíru a technologické pokroky.",
+        "email": "contact@spacetech.com",
+        "phone_number": "888-444-2222"
+    },
+    {
+        "nazev": "Foodie Delights",
+        "popis": "Výběrové potraviny a kulinářské zážitky pro nadšence do jídla.",
+        "email": "info@foodiedelights.net",
+        "phone_number": "777-999-3333"
+    },
+    {
+        "nazev": "Skyline Builders",
+        "popis": "Stavební společnost specializující se na výstavbu a renovace.",
+        "email": "info@skylinebuilders.com",
+        "phone_number": "555-777-1111"
+    },
+    {
+        "nazev": "EnergySavers",
+        "popis": "Společnost nabízející energeticky efektivní řešení pro domácnosti a firmy.",
+        "email": "info@energysavers.cz",
+        "phone_number": "111-999-5555"
+    },
+    {
+        "nazev": "GreenTech Innovations",
+        "popis": "Inovace v oblasti ekologických technologií a udržitelnosti.",
+        "email": "info@greentech.cz",
+        "phone_number": "444-222-9999"
+    },
+    {
+        "nazev": "GlobalTraders Inc",
+        "popis": "Mezinárodní obchodní společnost s globálním dosahem.",
+        "email": "info@globaltraders.cz",
+        "phone_number": "888-333-5555"
+    },
+    {
+        "nazev": "LuxuryVoyages",
+        "popis": "Luxusní cestovní agentura nabízející exkluzivní dovolené po celém světě.",
+        "email": "info@luxuryvoyages.cz",
+        "phone_number": "123-555-7777"
+    },
+    {
+        "nazev": "TechInnovators",
+        "popis": "Inovace v oblasti technologie a vývoje software.",
+        "email": "info@techinnovators.cz",
+        "phone_number": "555-999-8888"
+    },
+    {
+        "nazev": "GreenLiving Co.",
+        "popis": "Zelený životní styl a ekologické produkty pro udržitelnost.",
+        "email": "info@greenliving.cz",
+        "phone_number": "777-444-1111"
+    },
+    {
+        "nazev": "SolarSolutions",
+        "popis": "Sluneční energetická řešení pro obnovitelnou energii.",
+        "email": "info@solarsolutions.cz",
+        "phone_number": "555-123-9999"
+    },
+    {
+        "nazev": "GlobalConsulting Group",
+        "popis": "Poradenská firma poskytující globální strategické konzultační služby.",
+        "email": "info@globalconsulting.cz",
+        "phone_number": "888-777-3333"
+    },
+    {
+        "nazev": "HomeSweetHome Realty",
+        "popis": "Realitní kancelář specializující se na nemovitosti pro rodiny.",
+        "email": "info@homesweethome.cz",
+        "phone_number": "123-999-5555"
+    },
+    {
+        "nazev": "InnovateEdu",
+        "popis": "Inovace v oblasti vzdělávání a technologie pro školství.",
+        "email": "info@innovateedu.cz",
+        "phone_number": "444-555-7777"
+    },
+    {
+        "nazev": "SkyHigh Airlines",
+        "popis": "Letecká společnost nabízející letecké služby po celém světě.",
+        "email": "info@skyhighairlines.cz",
+        "phone_number": "555-111-8888"
+    },
+    {
+        "nazev": "GlobalTrade Solutions",
+        "popis": "Globální obchodní řešení pro společnosti a podnikání.",
+        "email": "info@globaltradesolutions.cz",
+        "phone_number": "777-333-9999"
+    },
+    {
+        "nazev": "GourmetDelights",
+        "popis": "Gurmánské potraviny a lahůdky pro požitkáře z jídla.",
+        "email": "info@gourmetdelights.cz",
+        "phone_number": "123-444-5555"
+    },
+    {
+        "nazev": "TechWizards",
+        "popis": "Technologičtí kouzelníci přinášející technologické inovace.",
+        "email": "info@techwizards.cz",
+        "phone_number": "555-777-3333"
+    },
+    {
+        "nazev": "HealthyLife",
+        "popis": "Zdravý životní styl a wellness produkty pro lepší život.",
+        "email": "info@healthylife.cz",
+        "phone_number": "888-123-9999"
+    }
+]

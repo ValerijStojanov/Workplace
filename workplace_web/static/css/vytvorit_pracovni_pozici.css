@@ -1,0 +1,146 @@
+
+:root {
+    --nav-font: 'Kanit', sans-serif;
+}
+
+.vytvorit_pracovni_pozici_formular_container {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+.vytvorit_pracovni_pozici_formular_title {
+    margin: 2em 0em 2em 0em;
+    padding: .4em 0em .4em 0em;
+    font-family: var(--nav-font);
+    font-weight: 400;
+    text-align: center;
+    background-color: #e52165;
+    color: #fff;
+    font-size: 2.5em;
+
+}
+
+.django-ckeditor-widget {
+    width: 100%;
+}
+
+
+.vytvorit_pracovni_pozici_formular_content {
+    position: relative;
+    font-family: var(--nav-font);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.vytvorit_pracovni_pozici_formular_content p {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+}
+
+.vytvorit_pracovni_pozici_formular_content label {
+    font-size: 1.5em;
+}
+
+.vytvorit_pracovni_pozici_formular_content input {
+    border: 5px solid white;
+    font-size: 1.5em;
+    height: 2em;
+    text-align: center;
+    width: 100%;
+}
+
+.vytvorit_pracovni_pozici_formular_content textarea {
+    border: 5px solid white;
+    font-size: 1em;
+    height: 5em;
+    width: 100%;
+}
+
+.vytvorit_pracovni_pozici_formular {
+    width: 60%;
+    padding: 1em;
+    border-radius: 1%;
+    background-color: #e52165;
+
+}
+
+.vytvorit_pracovni_pozici_form_btn {
+    padding: 1em;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vytvorit_pracovni_pozici_btn_create {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 1.3em;
+    background-color: #e52165;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    border: 3px solid white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 1em 1em 1em 1em;
+}
+
+.vytvorit_pracovni_pozici_btn_create:hover {
+    background-color: #de1b5f;
+    transform: scale(1.02);
+}
+
+.back_button {
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+    background-color: #e52165;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    width: 15em;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back_button:hover {
+    background-color: #de1b5f;
+    transform: scale(1.02);
+}
+
+.back_button a {
+    text-decoration: none;
+    font-family: var(--nav-font);
+    color: white;
+    padding: 1em 1em 1em 1em;
+}
+
+#return_svg {
+    margin-left: 1em;
+    height: 1.2em;
+    width: 1.2em;
+}
+
+@media screen and (max-width: 768px)  {
+
+    .vytvorit_pracovni_pozici_formular_title {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    .vytvorit_pracovni_pozici_formular {
+        width: 85%;
+    }
+}
+

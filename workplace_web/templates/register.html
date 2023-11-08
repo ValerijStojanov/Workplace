@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block register %}
+
+<h1 class="register_form_title">Registrace</h1>
+<div class="register_form_container">
+    <form class="register_form" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Registrovat se</button>
+    </form>
+</div>
+{% endblock  %}

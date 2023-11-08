@@ -1,0 +1,258 @@
+:root {
+    --nav-font: 'Kanit', sans-serif;
+}
+
+.navbar_container {
+    width: 100%;
+}
+
+.navbar_menu {
+    background-color: #e52165;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+}
+
+.navbar_left_elements {
+    display: flex;
+    gap: 10em;
+    align-items: center;
+}
+
+.navbar_logo {
+    position: relative;
+    left: 2em;
+    width: 13em;
+    height: 10em;
+}
+
+.navbar_title {
+    font-family: var(--nav-font);
+    font-weight: 400;
+    color: #fff;
+    font-size: 2em;
+}
+
+.ul_navbar_elements {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0em 1em 0em 0em;
+    font-size: 1.2em;
+    gap: 1em;
+}
+
+.navbar_link a {
+    font-size: 1em;
+}
+
+.navbar_item span {
+    color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+#p_condition {
+    margin: 0;
+    color: black;
+    font-size: .8em;
+}
+
+#navbar_login_link {
+    padding: 0;
+}
+
+#logout_link {
+    font-family: var(--nav-font);
+    text-decoration: none;
+    font-size: 1em;
+    width: 100%;
+    color: black;
+    border: 3px solid black;
+}
+
+
+#logout_btn {
+    display: inline-block;
+    padding: .2em;
+    font-size: 1em;
+    width: 100%;
+    height: 100%;
+    background-color: #e52165;
+    color: white;
+    border: none;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logout_btn_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar_item {
+    display: inline;
+}
+
+.navbar_link {
+    font-family: var(--nav-font);
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    margin: 0em 0.2em 0em .2em;
+    font-size: 1.3em;
+    transition: color 0.3s ease;
+}
+
+.navbar_link:hover {
+    color: black;
+}
+
+.navbar_burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    margin: 1em;
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 930px) {
+    .navbar_link:hover {
+        color: #e52165;
+    }
+
+    .navbar_burger_container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar_menu {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .ul_navbar_elements {
+        display: flex;
+        flex-direction: column;
+        font-size: 1em;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 0;
+    }
+
+    .ul_navbar_elements li {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #p_condition {
+        margin: 0;
+        color: greenyellow;
+        font-size: 1em;
+    }
+
+    .navbar_logo {
+        left: 0;
+        width: 15em;
+        height: 10em;
+    }
+
+    .navbar_left_elements {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .1em;
+        width: 100%;
+    }
+
+    .navbar_title {
+        font-size: 1.3em;
+        margin-left: .1em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .ul_navbar_elements {
+        display: none;
+    }
+
+    .navbar_burger {
+        display: flex;
+    }
+
+    .navbar_burger.active .bar:nth-child(1) {
+        transform: rotate(-50deg) translate(-8.5px, 10px);
+    }
+
+    .navbar_burger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar_burger.active .bar:nth-child(3) {
+        transform: rotate(50deg) translate(-1px, -3.5px);
+    }
+
+    #logout_btn {
+        background-color: black;
+        border: 1px solid white;
+        font-weight: 600;
+        font-size: .8em;
+    }
+
+    .ul_navbar_elements.active {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        left: 0;
+        right: 0;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+        transition: transform 0.3s ease;
+    }
+
+    .navbar_menu ul.active li {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 1367px) and (min-width: 769px) {
+    .navbar_left_elements {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navbar_title {
+        font-size: 2.5em;
+    }
+    .navbar_menu {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+}

@@ -1,0 +1,184 @@
+[
+    {
+        "nazev": "Software Developer",
+        "mzda": "30000 Kč",
+        "popis": "Důležitá role в naší firmě, kde budete moci uplatnit své dovednosti и získat nové zkušenosti.",
+        "firma": "HealthyLife",
+        "misto_prace": "Praha"
+    },
+    {
+        "nazev": "Data Analyst",
+        "mzda": "35000 Kč",
+        "popis": "Jedinečná příležitost stát se členem týmu TechWizards a pracovat на našich inovativních projektech.",
+        "firma": "TechWizards",
+        "misto_prace": "Brno"
+    },
+    {
+        "nazev": "Chef",
+        "mzda": "40000 Kč",
+        "popis": "Vstupte do světa lahodných chutí jako součást týmu GourmetDelights. Pracujte с námi на výjimečných jídlech",
+        "firma": "GourmetDelights",
+        "misto_prace": "Ostrava"
+    },
+    {
+        "nazev": "Sales Manager",
+        "mzda": "45000 Kč",
+        "popis": "Pracujte с námi v GlobalTrade Solutions a pomozte nám rozvíjet globální trh.",
+        "firma": "GlobalTrade Solutions",
+        "misto_prace": "Plzeň"
+    },
+    {
+        "nazev": "Flight Attendant",
+        "mzda": "50000 Kč",
+        "popis": "Připojte se к týmu SkyHigh Airlines a cestujte se нámi по celém světě.",
+        "firma": "SkyHigh Airlines",
+        "misto_prace": "Ústí nad Labem"
+    },
+    {
+        "nazev": "Educational Consultant",
+        "mzda": "55000 Kč",
+        "popis": "Rozvíjejte se jako Educational Consultant в InnovateEdu и přispějte к rozvoji vzdělávání.",
+        "firma": "InnovateEdu",
+        "misto_prace": "Liberec"
+    },
+    {
+        "nazev": "Real Estate Agent",
+        "mzda": "60000 Kč",
+        "popis": "Pracujte v oblasti nemovitostí с týmem HomeSweetHome Realty и pomozte lidem najít ideální domov.",
+        "firma": "HomeSweetHome Realty",
+        "misto_prace": "Olomouc"
+    },
+    {
+        "nazev": "Consulting Analyst",
+        "mzda": "65000 Kč",
+        "popis": "Připojte se к nám v GlobalConsulting Group a pracujte в oblasti konzultací a strategie.",
+        "firma": "GlobalConsulting Group",
+        "misto_prace": "Hradec Králové"
+    },
+    {
+        "nazev": "Solar Energy Specialist",
+        "mzda": "70000 Kč",
+        "popis": "Pomáhejte našim klientům ušetřit energii как SolarSolutions Specialist.",
+        "firma": "SolarSolutions",
+        "misto_prace": "Zlín"
+    },
+    {
+        "nazev": "Environmental Engineer",
+        "mzda": "75000 Kč",
+        "popis": "Pracujte на zlepšením životního prostředí с námi v GreenLiving Co.",
+        "firma": "GreenLiving Co.",
+        "misto_prace": "Karlovy Vary"
+    },
+    {
+        "nazev": "Software Engineer",
+        "mzda": "80000 Kč",
+        "popis": "Připojte se к týmu TechInnovators a vyvíjejte inovativní software.",
+        "firma": "TechInnovators",
+        "misto_prace": "Pardubice"
+    },
+    {
+        "nazev": "Luxury Travel Consultant",
+        "mzda": "85000 Kč",
+        "popis": "Cestujte по celém světě как LuxuryVoyages Consultant a zajistěte nejlepší zážitky pro naše klienty.",
+        "firma": "LuxuryVoyages",
+        "misto_prace": "České Budějovice"
+    },
+    {
+        "nazev": "Trade Analyst",
+        "mzda": "90000 Kč",
+        "popis": "Pomozte нám v rozvoji globálního obchodu как Trade Analyst v GlobalTraders Inc.",
+        "firma": "GlobalTraders Inc",
+        "misto_prace": "Ústí nad Labem"
+    },
+    {
+        "nazev": "Green Energy Consultant",
+        "mzda": "95000 Kč",
+        "popis": "Pracujte s námi в oblasti obnovitelných zdrojů как GreenTech Innovations Consultant.",
+        "firma": "GreenTech Innovations",
+        "misto_prace": "Brno"
+    },
+    {
+        "nazev": "Energy Savings Specialist",
+        "mzda": "100000 Kč",
+        "popis": "Pomozte našim klientům ušetřit energii jako EnergySavers Specialist.",
+        "firma": "EnergySavers",
+        "misto_prace": "Praha"
+    },
+    {
+        "nazev": "Real Estate Developer",
+        "mzda": "105000 Kč",
+        "popis": "Pomáhejte nám ve vývoji nových nemovitostí с týmem Skyline Builders.",
+        "firma": "Skyline Builders",
+        "misto_prace": "Ostrava"
+    },
+    {
+        "nazev": "Food Quality Analyst",
+        "mzda": "110000 Kč",
+        "popis": "Zlepšujte kvalitu našich produktů как Foodie Delights Quality Analyst.",
+        "firma": "Foodie Delights",
+        "misto_prace": "Plzeň"
+    },
+    {
+        "nazev": "Space Technology Specialist",
+        "mzda": "115000 Kč",
+        "popis": "Připojte se к nám как SpaceTech Innovations Specialist и pomáhejte rozvíjet kosmickou technologii.",
+        "firma": "SpaceTech Innovations",
+        "misto_prace": "Brno"
+    },
+    {
+        "nazev": "Luxury Lifestyle Advisor",
+        "mzda": "120000 Kč",
+        "popis": "Poskytujte rady a zážitky выsoce postaveným klientůм как LuxuryLifestyle Advisor в LuxuryLifestyle Inc.",
+        "firma": "LuxuryLifestyle Inc",
+        "misto_prace": "Praha"
+    },
+    {
+        "nazev": "Trade Exchange Specialist",
+        "mzda": "125000 Kč",
+        "popis": "Pomozte našim klientům ve výměnném obchodu jako Trade Exchange Specialist в GlobalTrade Exchange.",
+        "firma": "GlobalTrade Exchange",
+        "misto_prace": "Brno"
+    },
+    {
+        "nazev": "Renewable Energy Specialist",
+        "mzda": "130000 Kč",
+        "popis": "Pomáhejte наšim klientůм s obnovitelnou energií как RenewableEnergy Solutions Specialist.",
+        "firma": "RenewableEnergy Solutions",
+        "misto_prace": "Pardubice"
+    },
+    {
+        "nazev": "Environmental Specialist",
+        "mzda": "135000 Kč",
+        "popis": "Pracujte na ochraně životního prostředí в Nature's Harvest Co.",
+        "firma": "Nature's Harvest Co.",
+        "misto_prace": "Ostrava"
+    },
+    {
+        "nazev": "Innovative Technology Analyst",
+        "mzda": "140000 Kč",
+        "popis": "Připojte se к nám как Innovative Technology Analyst и pracujte на inovacích v oblasti technologií.",
+        "firma": "TechGenius Innovations",
+        "misto_prace": "Plzeň"
+    },
+    {
+        "nazev": "Healthcare Scientist",
+        "mzda": "145000 Kč",
+        "popis": "Pomáhejte нám v laboratoři с výzkumem и vývojem léků как HealthCure Labs Scientist.",
+        "firma": "HealthCure Labs",
+        "misto_prace": "Brno"
+    },
+    {
+        "nazev": "Project Manager",
+        "mzda": "150000 Kč",
+        "popis": "Řiďte projekty как Project Manager в Sunset Industries a dosahujte úspěchu.",
+        "firma": "Sunset Industries",
+        "misto_prace": "Praha"
+    },
+    {
+        "nazev": "Environmental Solutions Specialist",
+        "mzda": "155000 Kč",
+        "popis": "Připojte se к nám в EcoSolutions Group и pracujte на řešeních pro životní prostředí.",
+        "firma": "EcoSolutions Group",
+        "misto_prace": "Liberec"
+    }
+]

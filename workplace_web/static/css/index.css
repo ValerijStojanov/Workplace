@@ -1,0 +1,166 @@
+:root {
+    --nav-font: 'Kanit', sans-serif;
+}
+
+
+
+.form_container {
+    background-color: black;
+    margin: 0;
+}
+
+.search_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 3em 0em 0em 0em;
+}
+
+.form_button {
+    display: inline-block;
+    height: 4em;
+    width: 10em;
+    padding: 0px 1em;
+    font-size: 16px;
+    font-family: var(--nav-font);
+    font-weight: 400;
+    background-color: #e52165;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    padding: 1em 1em 1em 1em;
+    transition: transform 0.3s ease;
+}
+
+.form_button:hover {
+    transform: scale(1.01);
+}
+
+.form_input[type="search"] {
+        outline: none;
+        padding: 20px;
+        text-align: center;
+        font-family: var(--nav-font);
+        width: 40rem;
+        border: 2px solid #e52165; 
+        border-radius: 4px; 
+        font-size: 16px; 
+        background-color: #fff;
+        padding-right: 30px; 
+        transition: box-shadow 0.5s ease ,transform 0.5s ease;
+}
+
+.form_input[type="search"]:hover {
+    box-shadow: 0px 1px 20px 11px #e521662e;
+    transform: scale(1.02);
+    
+}
+
+.index_content {
+    min-height: 100%;
+    margin-bottom: 10em;
+}
+
+.index_title_div {
+    margin: 3em 0em 3em 0em;
+    background-color: #e52165;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index_content h1 {
+    font-family: var(--nav-font);
+    font-weight: 400;
+    color: #fff;
+    font-size: 2.5em;
+}
+
+.pracovni_pozice a {
+    font-family: var(--nav-font);
+    text-decoration: none;
+    color: black;
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.pracovni_pozice {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+
+.pozice-karta {
+    padding: 10px;
+    width: 300px; 
+    box-shadow: 0px 0px 5px #e521664a;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    border: 2px solid rgba(0, 0, 0, 0.086);
+    border-radius: .2em;
+}
+
+.pozice-karta:hover {
+    transform: scale(1.02);
+}
+
+
+.pozice-karta h3 {
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.167);
+    overflow-x: scroll;
+    font-size: 20px;
+    color: black;
+    padding: .2em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.space {
+    margin-top: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+
+
+
+    .form_input[type="search"] {
+        width: 90%;
+
+    }
+
+    .form_button {
+        width: 90%;
+    }
+
+    .index_content h1 {
+        font-size: 1.2em;
+    }
+
+    .pozice-karta {
+        text-align: center;
+        width: 80%;
+    }
+}
+
+

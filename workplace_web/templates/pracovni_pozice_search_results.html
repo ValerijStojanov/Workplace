@@ -1,0 +1,15 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Firma Search Results for "{{ query }}"</h2>
+{% if results %}
+    <ul>
+        {% for pozice in results %}
+            <li><a href="{% url 'detail_pozice' slug=pozice.slug %}">{{ pozice.nazev }}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No search results found for "{{ query }}"</p>
+{% endif %}
+{% endblock %}

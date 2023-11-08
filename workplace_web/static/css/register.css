@@ -1,0 +1,136 @@
+
+:root {
+    --nav-font: 'Kanit', sans-serif;
+}
+
+.register_form_title {
+    font-family: var(--nav-font);
+    text-align: center;
+    background-color: #e52165;
+    font-size: 2.5em;
+    color: white;
+    margin: 2em 0em 2em 0em;
+    padding: .3em 0em .3em 0em;
+}
+
+.register_form_container {
+    display: flex;
+    justify-content: center;
+    font-family: var(--nav-font);
+    font-weight: 400;
+    min-height: 100%;
+}
+
+.register_form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #e52165;
+    margin: 0;
+    height: 100%;
+    width: 50%;
+    margin: 1em 0em 2em 0em;
+}
+
+.register_form p {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register_form ul {
+    text-align: justify;
+}
+
+.register_form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+.register_form input[type="text"],
+.register_form input[type="email"],
+.register_form input[type="password"] {
+    width: 100%;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border: 3px solid #000000;
+    border-radius: 5px;
+}
+
+.register_form button[type="submit"] {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 1.3em;
+    background-color: #e52165;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    border: 3px solid white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 1em 1em 1em 1em;
+}
+
+.register_form button[type="submit"]:hover {
+    background-color: #de1b5f;
+    transform: scale(1.02);
+}
+
+.errorlist {
+    color: red;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.success-message {
+    color: green;
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .register_form_title {
+        font-size: 1.5em;
+    }
+    .register_form {
+        width: 100%;
+        border: none;
+        margin: 0em 0em 2em 0em;
+    }
+
+    .register_form p {
+        width: 100%;
+    }
+
+    .register_form ul {
+        text-align: justify;
+        padding: 2em;
+        margin: 0;
+    }
+
+    .register_form li {
+        font-size: .9em;
+        
+    }
+
+    .register_form input[type="text"],
+    .register_form input[type="email"],
+    .register_form input[type="password"] {
+        width: 90%;
+}
+}
+
+@media screen and (max-width: 1218px) and (min-width: 769px) {
+    .register_form ul {
+        text-align: justify;
+        padding: 2em;
+        margin: 0;
+    }
+
+}

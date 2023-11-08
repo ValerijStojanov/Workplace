@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% load static %}
+
+
+{% block successes_page_form %}
+
+<div class="check_page_container">
+    <div class="check_page_svg_box">
+        <img id="check_svg" src="{% static 'svg/check.svg' %}" alt="">
+    </div>
+    <div class="check_page_title">
+        <h1> Formulář byl úspěšně vyplněn. </h1>
+        <h3>Jste o jeden krok blíže k svému cíli.</h3>
+    </div>
+    <div class="check_page_zpet_button_container">
+        <button class="check_page_zpet_button"> <img id="return_svg" src="{% static 'svg/return.svg' %}" alt=""><a href="{% url 'homepage' %}">Zpět na hlavní stránku</a></button>
+    </div>
+</div>
+
+{% endblock  %}

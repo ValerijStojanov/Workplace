@@ -1,0 +1,74 @@
+{% load static %}
+
+
+
+<div class="navbar_container">
+    <nav class="navbar_menu">
+        <div class="navbar_left_elements">
+            <img class="navbar_logo" src="{% static 'svg/onlinelogomaker-092823-1516-9800.svg' %}" alt="svg">
+            <h1 class="navbar_title" id="navbar_title">Zde začíná Váš příběh úspěchu</h1>
+        </div>
+        <div class="navbar_burger_container">
+            <div class="navbar_burger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            
+        </div>
+        <ul class="ul_navbar_elements">
+            <li class="navbar_item"><a class="navbar_link" href="{% url 'homepage' %}">Nabídky práce</a></li>
+            {% if user.is_superuser %}
+                <li class="navbar_item">
+                    <a class="navbar_link" href="{% url 'vytvorit_pracovni_pozici' %}">Vytvořit nabídku</a>
+                </li>
+            {% endif %}
+            {% if not user.is_authenticated %}
+                <li class="navbar_item"><a class="navbar_link" href="{% url 'register' %}">Registrace</a></li>
+            {% endif %}
+            <li class="navbar_item">
+                <span class="navbar_link" style="color: greenyellow" >
+                    {% if user.is_authenticated %}
+                        - {{ user.username }} -
+                        <div class="user_condition">
+                            {% if user.is_superuser %}
+                                <p id="p_condition" style="color: greenyellow;">admin</p>
+                            {% else %}
+                                <p id="p_condition"></p>
+                            {% endif %}
+                        </div>
+                    {% else %}
+                        <a id="navbar_login_link" class="navbar_link" href="{% url 'login' %}">Přihlášení</a>
+                    {% endif %}
+                </span>
+                {% if user.is_authenticated %}
+                <div class="logout_btn_container">
+                    <a id="logout_link" href="{% url 'logout' %}">
+                    <button id="logout_btn">Odhlásit se</button>
+                    </a>
+                </div>
+                {% endif %}
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let burger = document.querySelector('.navbar_burger');
+        let menu = document.querySelector('.navbar_menu ul');
+        let closeButton = document.querySelector('.close-button');
+
+        burger.addEventListener('click', function () {
+            burger.classList.toggle('active');
+            menu.classList.toggle('active');
+            closeButton.classList.toggle('active');
+        });
+
+        closeButton.addEventListener('click', function () {
+            burger.classList.remove('active');
+            menu.classList.remove('active');
+            closeButton.classList.remove('active');
+        });
+    });
+</script>

@@ -1,0 +1,324 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}{{ pozice.nazev }}{% endblock %}
+
+{% block detail_pozice %}
+
+
+<style>
+    :root {
+        --nav-font: 'Kanit', sans-serif;
+    }
+
+    input[type="tel"] {
+        font-size: .8em;
+        border: 2px solid #e52165;
+        text-align: center;
+        height: 2em;
+    }
+
+    input[type="email"] {
+        font-size: .8em;
+        height: 2em;
+        text-align: center;
+        border: 2px solid #e52165;
+    }
+
+    #myBtn {
+        align-items: center;
+        font-size: 1.3em;
+        font-family: var(--nav-font);
+        background-color: #e52165;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        width: 15em;
+        height: 4em;
+        border-radius: 4px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      
+      #myBtn:hover {
+        background-color: #de1b5f;
+        transform: scale(1.02);
+      }
+      
+      .modal {
+          display: none; 
+          position: fixed; 
+          z-index: 1; 
+          padding-top: 5em; 
+          left: 0;
+          font-family: var(--nav-font);
+          top: 0;
+          width: 100%;
+          height: 100%; 
+          overflow: auto; 
+          background-color: rgb(0,0,0); 
+          background-color: rgba(0,0,0,0.4); 
+      }
+      
+      
+      .modal-content {
+          position: relative;
+          background-color: white;
+          text-align: center;
+          margin: auto;
+          padding: 0;
+          border: 5px solid #e52165;
+          width: 60%;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+          -webkit-animation-name: animatetop;
+          -webkit-animation-duration: 0.4s;
+          animation-name: animatetop;
+          animation-duration: 0.4s
+      }
+      
+      
+      @-webkit-keyframes animatetop {
+          from {top:-300px; opacity:0} 
+          to {top:0; opacity:1}
+      }
+      
+      @keyframes animatetop {
+          from {top:-300px; opacity:0}
+          to {top:0; opacity:1}
+      }
+      
+      
+      .close {
+          color: white;
+          float: right;
+          font-size: 3em ;
+          font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+      }
+      
+      .modal-header {
+          padding: 2px 16px;
+          background-color: #e52165;
+          color: white;
+      }
+      
+      .modal-body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+    }
+      
+      .modal-footer {
+          padding: 2px 16px;
+          background-color: #e52165;
+          color: white;
+          border: 3px solid #e52165
+      }
+
+      .form_modal {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #label_modal {
+        font-size: 1.3em;
+      }
+
+      #phone_modal {
+        font-size: 1.3em;
+      }
+
+      #btn_modal {
+        display: inline-block;
+        font-size: 1.3em;
+        background-color: #e52165;
+        color: #fff;
+        font-family: var(--nav-font);
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        padding: 1em 1em 1em 1em;
+        transition: transform 0.3s ease;
+      }
+
+      #btn_modal:hover {
+        background-color: #f20658;
+        transform: scale(1.03);
+        
+    }
+
+      #souhlas_modal {
+        font-size: 1em;
+      }
+      .souhlas_modal_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: .3em;
+        align-items:center;
+      }
+
+      input[type=checkbox] {
+        position: relative;
+          border: 2px solid #000;
+          border-radius: 2px;
+          background: none;
+          cursor: pointer;
+          line-height: 0;
+          margin: 0 .6em 0 0;
+          outline: 0;
+          padding: 0 !important;
+          vertical-align: text-top;
+          height: 20px;
+          width: 20px;
+          -webkit-appearance: none;
+        opacity: 1;
+      }
+      
+      input[type=checkbox]:hover {
+        opacity: 1;
+      }
+      
+      input[type=checkbox]:checked {
+        background-color: #000;
+        opacity: 1;
+      }
+      
+      input[type=checkbox]:before {
+        content: '';
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        width: 4px;
+        height: 10px;
+        border: solid #FFF;
+        border-width: 0 2px 2px 0;
+        margin: -1px -1px 0 -1px;
+        transform: rotate(45deg) translate(-50%, -50%);
+        z-index: 2;
+      }
+
+      @media screen and (max-width: 768px) {
+
+        .modal {
+            padding-top: .5em;
+        }
+
+        .modal-content {
+            width: 80%;
+        }
+    }
+
+</style>
+
+
+<h1 class="detail_pozice_title"> <img id="employee_svg" src="{% static 'svg/employee.svg' %}" alt=""> {{ pozice.nazev }} </h1>
+
+<div class="detail_pozice_main">
+    <div class="detail_content">
+        <div class="left_side_detail_pozice_content">
+            <div class="firma">
+                <img id="building_svg" src="{% static 'svg/building.svg' %}" alt="">
+                <p> {{ pozice.firma }}</p>
+            </div>
+
+            <div class="misto_prace">
+                <img id="pin_svg" src="{% static 'svg/pin.svg' %}" alt="">
+                <p>  {{pozice.misto_prace}} </p>
+            </div>
+
+            <div class="mzda">
+                <img id="pay_svg" src="{% static 'svg/pay.svg' %}" alt="">
+                <p> {{ pozice.mzda }}</p>
+            </div>
+        </div>
+
+        <div class="right_side_detail_pozice_content"> 
+            <div class="popis_pozice">
+                <p id="popis_pozice"> {{ pozice.popis|safe }} </p> 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="detail_pozice_btns_container">
+    <div class="buttom_mam_zajem">
+        <button id="myBtn" class="zajem_button">Mám zájem</button>
+    </div>
+    <div class="zpet_button_container">
+        <button class="zpet_button"> <img id="return_svg" src="{% static 'svg/return.svg' %}" alt=""><a href="{% url 'homepage' %}">Zpět na hlavní stránku</a></button>
+    </div>
+</div>
+    
+<div class="space" style= 'min-height: 50%;'></div>
+
+<div id="myModal" class="modal">    
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h1>{{ pozice.nazev }}</h1>
+        </div>
+    
+        <div class="modal-body">
+            <form class="form_modal" method="post" action="{% url 'succeses_page_form' %}">
+                {% csrf_token %}
+                <label id="label_modal" for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <br>
+                
+                <label id="phone_modal" for="phone">Telefoní číslo:</label>
+                <input type="tel" id="phone" name="phone" >
+
+                <br>
+
+                <div class="souhlas_modal_container">
+                    <label id="souhlas_modal" for="agree">Souhlasím s Všeobecnými obchodními podmínkami</label>
+                    <input type="checkbox" id="agree" name="agree" value="yes" required>
+                </div>
+                
+                <br>
+
+                <input id="btn_modal" type="submit" value="Odeslat">
+            </form>
+        </div>
+          
+        <div class="modal-footer">
+            <h2> {{ pozice.firma }}</h2>
+        </div>
+    </div>
+</div>
+    
+<script>
+
+    let modal = document.getElementById('myModal');
+    let btn = document.getElementById("myBtn");
+    let span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+
+{% endblock  %}
